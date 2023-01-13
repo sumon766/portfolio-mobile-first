@@ -20,18 +20,14 @@
 .navbar-nav > li > a {
   color: #fff !important;
   font-family: 'Inter', sans-serif;
-
-  /* font-family: 'Crete Round', serif;
-    font-family: 'Poppins', sans-serif;
-    font-family: 'Roboto', sans-serif; */
 }
 
 .headline-area {
-  background-color: #1C1A19;
+  background-color: #1c1a19;
 }
 
 .headline-area h1 {
-  font-family: 'Crete Round';
+  font-family: 'Crete Round', serif;
   font-style: normal;
   font-weight: 400;
   font-size: 56px;
@@ -41,7 +37,7 @@
 }
 
 .headline-area h3 {
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -52,7 +48,7 @@
 }
 
 .headline-area p {
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
