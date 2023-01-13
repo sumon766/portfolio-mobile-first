@@ -60,8 +60,6 @@ The **portfolio** is made with mobile first priority as in today's world the usa
 
 ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
-
 - **Mobile Responsive**
 - **Includes mobile menu**
 - **Includes details**
@@ -113,8 +111,6 @@ No installation required, just download and open in a browser
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
-
-> Describe 1 - 3 features you will add to the project.
 
 - [ ] **Desktop version**
 - [ ] **My Projects list**
