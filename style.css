@@ -31,7 +31,6 @@
   font-style: normal;
   font-weight: 400;
   font-size: 56px;
-  line-height: 64px;
   letter-spacing: 0.37px;
   color: #ff6b00;
 }
@@ -41,7 +40,6 @@
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
-  line-height: 32px;
   display: flex;
   align-items: center;
   color: #fff5e1;
@@ -52,7 +50,6 @@
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 24px;
   color: #fff;
   flex: none;
   order: 2;
