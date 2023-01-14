@@ -150,6 +150,6 @@ I would like to thank microverse for providing the resources.
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./LICENSE) licensed.
+This project is [MIT](https://github.com/sumon766/portfolio-mobile-first/blob/mobile-first/LICENSE.md) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
