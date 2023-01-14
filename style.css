@@ -10,6 +10,12 @@
   }
 }
 
+@media only screen and (max-width: 377px) {
+  .headline-area img {
+    left: 177px !important;
+  }
+}
+
 .navbar {
   border-radius: 0 !important;
   background-color: #3e3c3c !important;
@@ -35,7 +41,7 @@
   color: #ff6b00;
 }
 
-.headline-area h3 {
+.headline-area h2 {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -60,7 +66,7 @@
   position: absolute;
   width: 203px;
   height: 242px;
-  left: 197px;
+  left: 195px;
   top: 323px;
 }
 
@@ -72,11 +78,16 @@
 .social-icons {
   display: flex;
   list-style-type: none;
+  padding-left: 10px;
 }
 
 .social-icons li a {
-  color: #ff6b00;
+  color: #fff;
   margin-right: 10px;
+}
+
+.social-icons li a:hover {
+  color: rgb(148, 73, 233);
 }
 
 .social-icons i {
