@@ -1,7 +1,7 @@
 <a name="readme-top"></a>
 
 <div align="center">
-  <img src="images/Sumon-Software-Developer.png" alt="logo" width="140"  height="auto" />
+  <img src="images/Portfolio-Mobile-First.png" alt="logo" width="140"  height="auto" />
   <br/>
 
 </div>

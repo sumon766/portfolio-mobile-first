@@ -1,38 +1,202 @@
-@media only screen and (min-width: 1000px) {
-  .topnav {
-    padding: 0 8%;
+html,
+body,
+ul,
+li,
+a,
+nav,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+i,
+p,
+header,
+section,
+footer {
+  margin: 0;
+  padding: 0;
+}
+
+@media only screen and (max-width: 377px) {
+  .website-name {
+    align-self: center;
+    justify-self: center;
+  }
+
+  .intro-container {
+    flex-wrap: nowrap !important;
+    padding-bottom: 100px;
+    flex-direction: column !important;
+  }
+
+  .intro {
+    width: auto !important;
+    padding: 0 25px !important;
+  }
+
+  .intro h2 {
+    font-size: 45px !important;
+    letter-spacing: 0.37px;
+  }
+
+  .intro h3 {
+    font-size: 24px;
+    margin: 20px 0;
+  }
+
+  .social-icons-desk {
+    visibility: hidden !important;
+  }
+
+  .social-icons-mob {
+    display: flex !important;
+    flex-direction: row !important;
+  }
+
+  .side-image {
+    height: 420px;
+    width: 147px;
+    background-image: url("images/Illustration.png");
+    background-repeat: no-repeat;
+    position: absolute !important;
+    bottom: -300px !important;
+    right: 0;
   }
 }
 
 @media only screen and (max-width: 600px) {
-  .headline-area {
-    padding: 100px 0;
+  .website-name {
+    align-self: center;
+    justify-self: center;
+  }
+
+  .intro-container {
+    flex-wrap: nowrap !important;
+    padding-bottom: 170px;
+    flex-direction: column !important;
+  }
+
+  .intro {
+    width: auto !important;
+    padding: 0 25px;
+  }
+
+  .intro h2 {
+    font-size: 40px !important;
+    letter-spacing: 0.37px;
+  }
+
+  .intro h3 {
+    font-size: 24px;
+    margin: 20px 0;
+  }
+
+  .social-icons-desk {
+    visibility: hidden !important;
+  }
+
+  .social-icons-mob {
+    display: flex !important;
+    flex-direction: row !important;
+    margin-top: 20px;
+    margin-left: 40px;
+  }
+
+  .social-icons-mob > div {
+    margin-right: 15px;
+  }
+
+  .social-icons-mob a {
+    font-size: 15px;
+    color: #dbd8d7;
+  }
+
+  .side-image {
+    height: 365px;
+    width: 147px;
+    background-image: url("images/Illustration.png");
+    background-repeat: no-repeat;
+    position: absolute !important;
+    bottom: -300px !important;
+    right: 0;
   }
 }
 
-@media only screen and (max-width: 377px) {
-  .headline-area img {
-    left: 177px !important;
+@media only screen and (min-width: 1000px) {
+  .social-icons-mob {
+    visibility: hidden;
   }
+}
+
+.header-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: #3e3c3c;
+  padding: 15px;
+  align-content: center;
+  justify-content: center;
+}
+
+.website-name {
+  display: flex;
+  width: 40%;
+  justify-content: flex-start;
+}
+
+.website-name h1 {
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
 }
 
 .navbar {
-  border-radius: 0 !important;
-  background-color: #3e3c3c !important;
-  margin-bottom: 0 !important;
+  display: flex;
+  width: 40%;
+  justify-content: flex-end;
 }
 
-.navbar-brand,
-.navbar-nav > li > a {
-  color: #fff !important;
+.navbar ul li {
+  display: inline-block;
+  list-style-type: none;
+}
+
+.navbar ul li a {
+  color: #fff;
+  font-size: 15px;
   font-family: 'Inter', sans-serif;
+  padding: 8px 15px;
+  text-decoration: none;
 }
 
-.headline-area {
+.navbar ul li a:hover {
+  color: #f55800;
+}
+
+.intro-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   background-color: #1c1a19;
+  height: 90vh;
+  align-content: center;
+  float: left;
 }
 
-.headline-area h1 {
+.social-icons-desk {
+  display: flex;
+  flex-direction: column !important;
+  width: 8%;
+}
+
+.intro {
+  width: 50%;
+}
+
+.intro h2 {
   font-family: 'Crete Round', serif;
   font-style: normal;
   font-weight: 400;
@@ -41,7 +205,7 @@
   color: #ff6b00;
 }
 
-.headline-area h2 {
+.intro h3 {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -51,7 +215,7 @@
   color: #fff5e1;
 }
 
-.headline-area p {
+.intro p {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -60,36 +224,4 @@
   flex: none;
   order: 2;
   flex-grow: 0;
-}
-
-.headline-area img {
-  position: absolute;
-  width: 203px;
-  height: 242px;
-  left: 195px;
-  top: 323px;
-}
-
-.social-icon-area {
-  margin: 0;
-  padding: 0;
-}
-
-.social-icons {
-  display: flex;
-  list-style-type: none;
-  padding-left: 10px;
-}
-
-.social-icons li a {
-  color: #fff;
-  margin-right: 10px;
-}
-
-.social-icons li a:hover {
-  color: rgb(148, 73, 233);
-}
-
-.social-icons i {
-  font-size: 15px;
 }
