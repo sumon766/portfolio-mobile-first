@@ -61,7 +61,7 @@ The **portfolio** is made with mobile first priority as in today's world the usa
 ### Key Features <a name="key-features"></a>
 
 - **Mobile Responsive**
-- **Includes mobile menu**
+- **Includes mobile menu icon**
 - **Includes details**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
