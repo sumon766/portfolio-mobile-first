@@ -1,20 +1,4 @@
-html,
-body,
-ul,
-li,
-a,
-nav,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-i,
-p,
-header,
-section,
-footer {
+* {
   margin: 0;
   padding: 0;
 }
@@ -27,7 +11,7 @@ footer {
 
   .intro-container {
     flex-wrap: nowrap !important;
-    padding-bottom: 100px;
+    padding-bottom: 120px;
     flex-direction: column !important;
   }
 
@@ -48,34 +32,56 @@ footer {
 
   .social-icons-desk {
     visibility: hidden !important;
+    list-style-type: none;
   }
 
   .social-icons-mob {
     display: flex !important;
     flex-direction: row !important;
+    list-style-type: none;
   }
 
   .side-image {
-    height: 420px;
+    height: 232px;
     width: 147px;
     background-image: url("images/Illustration.png");
     background-repeat: no-repeat;
-    position: absolute !important;
-    bottom: -300px !important;
+    position: absolute;
+    bottom: 0 !important;
     right: 0;
   }
 }
 
 @media only screen and (max-width: 600px) {
+  .header-container {
+    padding: 0 !important;
+  }
+
   .website-name {
     align-self: center;
     justify-self: center;
   }
 
+  .nav {
+    visibility: hidden;
+  }
+
+  .mobile-menu {
+    display: flex;
+    justify-self: center;
+    align-self: center;
+  }
+
+  .mobile-menu i {
+    color: #fff;
+    font-size: 22px;
+  }
+
   .intro-container {
     flex-wrap: nowrap !important;
-    padding-bottom: 170px;
+    padding-bottom: 120px;
     flex-direction: column !important;
+    position: relative;
   }
 
   .intro {
@@ -95,37 +101,51 @@ footer {
 
   .social-icons-desk {
     visibility: hidden !important;
+    list-style-type: none;
   }
 
   .social-icons-mob {
     display: flex !important;
+    list-style-type: none;
     flex-direction: row !important;
     margin-top: 20px;
     margin-left: 40px;
   }
 
-  .social-icons-mob > div {
+  .social-icons-mob > li {
     margin-right: 15px;
   }
 
-  .social-icons-mob a {
-    font-size: 15px;
+  .social-icons-mob i {
+    font-size: 22px;
     color: #dbd8d7;
   }
 
+  .social-icons-mob i:hover {
+    color: #ff6b00;
+  }
+
+  .mobile-menu i:hover {
+    color: #ff6b00;
+  }
+
   .side-image {
-    height: 365px;
+    height: 232px;
     width: 147px;
     background-image: url("images/Illustration.png");
     background-repeat: no-repeat;
-    position: absolute !important;
-    bottom: -300px !important;
+    position: absolute;
+    bottom: 10px !important;
     right: 0;
   }
 }
 
 @media only screen and (min-width: 1000px) {
   .social-icons-mob {
+    visibility: hidden;
+  }
+
+  .mobile-menu {
     visibility: hidden;
   }
 }
@@ -181,7 +201,6 @@ footer {
   flex-direction: row;
   flex-wrap: wrap;
   background-color: #1c1a19;
-  height: 90vh;
   align-content: center;
   float: left;
 }
