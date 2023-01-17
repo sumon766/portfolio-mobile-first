@@ -1,0 +1,246 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@media only screen and (max-width: 377px) {
+  .website-name {
+    align-self: center;
+    justify-self: center;
+  }
+
+  .intro-container {
+    flex-wrap: nowrap !important;
+    padding-bottom: 120px;
+    flex-direction: column !important;
+  }
+
+  .intro {
+    width: auto !important;
+    padding: 0 25px !important;
+  }
+
+  .intro h2 {
+    font-size: 45px !important;
+    letter-spacing: 0.37px;
+  }
+
+  .intro h3 {
+    font-size: 24px;
+    margin: 20px 0;
+  }
+
+  .social-icons-desk {
+    visibility: hidden !important;
+    list-style-type: none;
+  }
+
+  .social-icons-mob {
+    display: flex !important;
+    flex-direction: row !important;
+    list-style-type: none;
+  }
+
+  .side-image {
+    height: 232px;
+    width: 147px;
+    background-image: url("images/Illustration.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0 !important;
+    right: 0;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .header-container {
+    padding: 0 !important;
+  }
+
+  .website-name {
+    align-self: center;
+    justify-self: center;
+  }
+
+  .nav {
+    visibility: hidden;
+  }
+
+  .mobile-menu {
+    display: flex;
+    justify-self: center;
+    align-self: center;
+  }
+
+  .mobile-menu i {
+    color: #fff;
+    font-size: 22px;
+  }
+
+  .intro-container {
+    flex-wrap: nowrap !important;
+    padding-bottom: 120px;
+    flex-direction: column !important;
+    position: relative;
+  }
+
+  .intro {
+    width: auto !important;
+    padding: 0 25px;
+  }
+
+  .intro h2 {
+    font-size: 40px !important;
+    letter-spacing: 0.37px;
+  }
+
+  .intro h3 {
+    font-size: 24px;
+    margin: 20px 0;
+  }
+
+  .social-icons-desk {
+    visibility: hidden !important;
+    list-style-type: none;
+  }
+
+  .social-icons-mob {
+    display: flex !important;
+    list-style-type: none;
+    flex-direction: row !important;
+    margin-top: 20px;
+    margin-left: 40px;
+  }
+
+  .social-icons-mob > li {
+    margin-right: 15px;
+  }
+
+  .social-icons-mob i {
+    font-size: 22px;
+    color: #dbd8d7;
+  }
+
+  .social-icons-mob i:hover {
+    color: #ff6b00;
+  }
+
+  .mobile-menu i:hover {
+    color: #ff6b00;
+  }
+
+  .side-image {
+    height: 232px;
+    width: 147px;
+    background-image: url("images/Illustration.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 10px !important;
+    right: 0;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .social-icons-mob {
+    visibility: hidden;
+  }
+
+  .mobile-menu {
+    visibility: hidden;
+  }
+}
+
+.header-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: #3e3c3c;
+  padding: 15px;
+  align-content: center;
+  justify-content: center;
+}
+
+.website-name {
+  display: flex;
+  width: 40%;
+  justify-content: flex-start;
+}
+
+.website-name h1 {
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.navbar {
+  display: flex;
+  width: 40%;
+  justify-content: flex-end;
+}
+
+.navbar ul li {
+  display: inline-block;
+  list-style-type: none;
+}
+
+.navbar ul li a {
+  color: #fff;
+  font-size: 15px;
+  font-family: 'Inter', sans-serif;
+  padding: 8px 15px;
+  text-decoration: none;
+}
+
+.navbar ul li a:hover {
+  color: #f55800;
+}
+
+.intro-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: #1c1a19;
+  align-content: center;
+  float: left;
+}
+
+.social-icons-desk {
+  display: flex;
+  flex-direction: column !important;
+  width: 8%;
+}
+
+.intro {
+  width: 50%;
+}
+
+.intro h2 {
+  font-family: 'Crete Round', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 56px;
+  letter-spacing: 0.37px;
+  color: #ff6b00;
+}
+
+.intro h3 {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  color: #fff5e1;
+}
+
+.intro p {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #fff;
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+}
