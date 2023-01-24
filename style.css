@@ -455,7 +455,7 @@
     text-align: center !important;
   }
 
-  .contact-form {
+  .contact-form-mob {
     width: auto !important;
     margin-left: 0% !important;
     margin-top: 60px;
@@ -820,7 +820,8 @@ textarea {
   font-weight: 400;
 }
 
-.contact-form button {
+.contact-form button,
+.contact-form-mob button {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -836,7 +837,8 @@ textarea {
   cursor: pointer;
 }
 
-.contact-form button:hover {
+.contact-form button:hover,
+.contact-form-mob button:hover {
   color: #d6c9c9;
 }
 
