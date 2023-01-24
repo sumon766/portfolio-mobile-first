@@ -218,15 +218,15 @@
   }
 
   .cards-container {
-    display: flex;
-    flex-direction: column;
+    display: flex !important;
+    flex-direction: column !important;
     margin-top: 15px;
     padding-bottom: 80px;
   }
 
   .card-area {
-    width: 89%;
-    margin: 0 auto;
+    width: 89% !important;
+    margin: 0 auto !important;
     margin-top: 15px;
     margin-bottom: 15px;
   }
@@ -572,14 +572,25 @@
   flex-wrap: wrap;
   background-color: #1c1a19;
   align-content: center;
-  float: left;
-  width: 100% !;
+  height: 100vh;
 }
 
 .social-icons-desk {
   display: flex;
   flex-direction: column !important;
   width: 8%;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icons-desk li {
+  list-style-type: none;
+}
+
+.social-icons-desk i {
+  color: #cfcfcf;
+  font-size: 22px;
+  margin-bottom: 16px;
 }
 
 .intro {
@@ -590,7 +601,8 @@
   font-family: 'Crete Round', serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 56px;
+  font-size: 72px;
+  line-height: 82px;
   letter-spacing: 0.37px;
   color: #ff6b00;
 }
@@ -599,21 +611,35 @@
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 32px;
+  line-height: 44px;
   display: flex;
   align-items: center;
   color: #fff5e1;
+  margin: 15px 0px;
 }
 
 .intro p {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 20px;
+  line-height: 32px;
   color: #fff;
   flex: none;
   order: 2;
   flex-grow: 0;
+}
+
+.side-image {
+  height: 350px;
+  width: 42%;
+  background-image: url("images/Illustration-header.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  position: absolute;
+  /* top: 10%; */
+  border: 1px solid #fff;
 }
 
 .recent-works {
@@ -721,7 +747,7 @@
   display: grid;
   grid-template-columns: auto auto auto;
   gap: 30px 25px;
-  margin-top: 25px;
+  margin-top: 30px;
 }
 
 .card {
@@ -780,7 +806,7 @@
   background-color: #ff6b00;
   justify-content: center;
   height: 48px;
-  width: auto;
+  width:100%;
 }
 
 .details a {
@@ -790,6 +816,158 @@
   font-family: 'Inter', sans-serif;
   font-weight: 700;
   font-size: 17px;
+}
+
+.about-section {
+  display: flex;
+  flex-direction: column;
+  background-color: #1c1a19;
+  padding: 8% 0%;
+  position: relative;
+}
+
+.about {
+  display: flex;
+  margin-left: 6%;
+}
+
+.about-details {
+  display: flex;
+  flex-direction: column;
+  padding: 0 30px;
+  width: 45%;
+}
+
+.about-details h2 {
+  font-family: 'Crete Round', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 71px;
+  line-height: 88px;
+  letter-spacing: 0.37px;
+  color: #ff6b00;
+  align-self: flex-start;
+}
+
+.about-details p {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #f4f5f7;
+  margin-top: 25px;
+  margin-bottom: 40px;
+}
+
+.get-resume-button {
+  text-decoration: none;
+  color: #fff;
+  align-items: center;
+  padding: 12px;
+  background: #ff6b00;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  text-align: center;
+  width: fit-content;
+}
+
+.about-side-image {
+  background-image: url("images/illustration-about-me.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 0%;
+  top: 8%;
+  height: 360px;
+  width: 45%;
+  background-position: right;
+}
+
+.about-line {
+  display: flex;
+  width: 84%;
+  margin: 0 auto;
+  margin-top: 160px;
+  margin-bottom: 120px;
+  border-bottom: 1px solid #fff;
+}
+
+.knowledge {
+  display: flex;
+  padding: 0% 8%;
+}
+
+.languages,
+.framework {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+}
+
+.language-title,
+.framework-title,
+.skill-title {
+  display: flex;
+  flex-direction: row;
+}
+
+.language-title img,
+.framework-title img,
+.skill-title img {
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+  margin-top: 10px;
+}
+
+.language-title h3,
+.framework-title h3,
+.skill-title h3 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  display: flex;
+  color: #fff;
+}
+
+.language-names,
+.framework-names,
+.skill-names {
+  margin-top: 35px;
+}
+
+.language-names ul,
+.framework-names ul,
+.skill-names ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.language-names ul li, 
+.framework-names ul li, 
+.skill-names ul li {
+  list-style-type: none;
+  margin-bottom: 20px;
+}
+
+.language-names ul li a, 
+.framework-names ul li a, 
+.skill-names ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 43px;
 }
 
 .contact {
