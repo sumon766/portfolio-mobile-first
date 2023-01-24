@@ -480,7 +480,7 @@
   }
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 768px) {
   .social-icons-mob {
     visibility: hidden;
   }
@@ -495,6 +495,19 @@
 
   #small {
     display: none;
+  }
+
+  .side-image {
+    justify-self: flex-end;
+    height: 100%;
+    width: 44%;
+    background-image: url("images/Illustration-header.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    position: absolute;
+    top: 10%;
+    right: 0%;
   }
 }
 
@@ -568,17 +581,15 @@
 
 .intro-container {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
   background-color: #1c1a19;
   align-content: center;
-  height: 100vh;
+  padding: 12% 0%;
 }
 
 .social-icons-desk {
   display: flex;
   flex-direction: column !important;
-  width: 8%;
+  width: 6%;
   justify-content: center;
   align-items: center;
 }
@@ -595,6 +606,8 @@
 
 .intro {
   width: 50%;
+  padding-left: 3%;
+  box-sizing: border-box;
 }
 
 .intro h2 {
@@ -629,17 +642,6 @@
   flex: none;
   order: 2;
   flex-grow: 0;
-}
-
-.side-image {
-  height: 350px;
-  width: 42%;
-  background-image: url("images/Illustration-header.png");
-  background-repeat: no-repeat;
-  background-position: right;
-  position: absolute;
-  /* top: 10%; */
-  border: 1px solid #fff;
 }
 
 .recent-works {
