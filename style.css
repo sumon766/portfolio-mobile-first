@@ -365,6 +365,10 @@
     width: fit-content;
   }
 
+  .get-resume-button:hover {
+    color: #d6c9c9;
+  }
+
   .about {
     position: relative;
   }
@@ -829,6 +833,11 @@ textarea {
   background-color: #f55800;
   padding: 10px 12px;
   border: 0;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  color: #d6c9c9;
 }
 
 .footer {
