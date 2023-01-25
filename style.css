@@ -71,6 +71,10 @@
   .stories p {
     width: 340px !important;
   }
+
+  .about-side-image {
+    bottom: -60% !important;
+  }
 }
 
 @media only screen and (max-width: 480px) {
@@ -96,7 +100,7 @@
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 769px) {
   .header-container {
     padding: 0 !important;
   }
@@ -123,7 +127,7 @@
 
   .intro-container {
     flex-wrap: nowrap !important;
-    padding-bottom: 120px;
+    padding: 135px 15px;
     flex-direction: column !important;
     position: relative;
   }
@@ -134,8 +138,9 @@
   }
 
   .intro h2 {
-    font-size: 40px !important;
+    font-size: 58px !important;
     letter-spacing: 0.37px;
+    line-height: 65px !important;
   }
 
   .intro h3 {
@@ -144,8 +149,7 @@
   }
 
   .social-icons-desk {
-    visibility: hidden !important;
-    list-style-type: none;
+    display: none !important;
   }
 
   .social-icons-mob {
@@ -457,10 +461,6 @@
     margin-top: 60px;
   }
 
-  #name input[name=fName], #name input[name=lName] {
-    display: none;
-  }
-
   #name input[name=fullName] {
     display: flex;
     width: 100% !important;
@@ -478,19 +478,19 @@
     display: flex;
     font-style: normal !important;
   }
+
+  .contact-form button {
+    margin: 0 auto;
+  }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 770px) {
   .social-icons-mob {
     visibility: hidden;
   }
 
   .mobile-menu {
     visibility: hidden;
-  }
-
-  #name input[name=fullName] {
-    display: none;
   }
 
   #small {
@@ -506,8 +506,215 @@
     background-size: contain;
     background-position: right;
     position: absolute;
-    top: 10%;
+    top: 9%;
     right: 0%;
+  }
+
+  .intro-container {
+    padding: 12% 0%;
+  }
+
+  .about-side-image {
+    background-image: url("images/illustration-about-me.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 0%;
+    top: 8%;
+    height: 360px;
+    width: 45%;
+    background-position: right;
+  }
+
+  .about-details {
+    width: 45%;
+  }
+
+  .knowledge {
+    display: flex;
+    padding: 0% 8%;
+  }
+  
+  .languages,
+  .framework {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+  }
+  
+  .skill {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+  }
+  
+  .language-title,
+  .framework-title,
+  .skill-title {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .language-title img,
+  .framework-title img,
+  .skill-title img {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    margin-top: 10px;
+  }
+  
+  .language-title h3,
+  .framework-title h3,
+  .skill-title h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    display: flex;
+    color: #fff;
+  }
+  
+  .language-names,
+  .framework-names,
+  .skill-names {
+    margin-top: 35px;
+  }
+  
+  .language-names ul,
+  .framework-names ul,
+  .skill-names ul {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .language-names ul li, 
+  .framework-names ul li, 
+  .skill-names ul li {
+    list-style-type: none;
+    margin-bottom: 20px;
+  }
+  
+  .language-names ul li a, 
+  .framework-names ul li a, 
+  .skill-names ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 43px;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 779px), 
+            screen and (max-height: 1280px) and (min-height: 1050px) {
+  .side-image {
+    top: -15%;
+  }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 779px) {
+  .navbar ul li a {
+    padding: 8px 12px !important;
+  }
+
+  .section-title {
+    padding: 0% 15%;
+  }
+
+  .multi-post-stories {
+    grid-template-columns: auto !important;
+    justify-content: center !important;
+  }
+
+  .stories-image {
+    margin-bottom: 30px;
+  }
+
+  .cards-container {
+    grid-template-columns: auto auto !important;
+  }
+
+  .about-side-image {
+    background-size: 100% 100% !important;
+    height: 300px;
+    top: 21%;
+  }
+
+  .contact {
+    flex-direction: column !important;
+  }
+
+  .contact-text {
+    width: auto !important;
+  }
+
+  .contact-form {
+    margin: 0 auto !important;
+  }
+
+  .contact-form button {
+    margin: 0 auto;
+  }
+
+  .card {
+    background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(images/recent-works-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px 25px 30px 25px;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .card-area {
+    position: relative;
+  }
+
+  .card1, .card4 {
+    background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(images/img-placeholder-1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 120px 25px 19px 25px;
+  }
+
+  .card1:hover, .card4:hover {
+    background: url(images/img-placeholder-1.png);
+  }
+
+  .card2, .card5 {
+    background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(images/img-placeholder-2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 120px 25px 19px 25px;
+  }
+
+  .card2:hover, .card5:hover {
+    background: url(images/img-placeholder-2.png);
+  }
+
+  .card3, .card6 {
+    background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(images/img-placeholder-3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 120px 25px 19px 25px;
+  }
+
+  .card3:hover, .card6:hover {
+    background: url(images/img-placeholder-3.png);
+  }
+
+  .details {
+    display: none !important;
+  }
+
+  .card-area:hover {
+    cursor: pointer;
+  }
+
+  .card-area:hover .details {
+    display: flex !important;
+    position: absolute;
+    bottom: 0px !important;
   }
 }
 
@@ -583,7 +790,6 @@
   display: flex;
   background-color: #1c1a19;
   align-content: center;
-  padding: 12% 0%;
 }
 
 .social-icons-desk {
@@ -752,13 +958,6 @@
   margin-top: 30px;
 }
 
-.card {
-  background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(images/recent-works-background.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 50px 25px 30px 25px;
-}
-
 .card h6 {
   font-family: 'Crete Round', sans-serif;
   font-style: normal;
@@ -837,7 +1036,6 @@
   display: flex;
   flex-direction: column;
   padding: 0 30px;
-  width: 45%;
 }
 
 .about-details h2 {
@@ -876,17 +1074,6 @@
   width: fit-content;
 }
 
-.about-side-image {
-  background-image: url("images/illustration-about-me.png");
-  background-repeat: no-repeat;
-  position: absolute;
-  right: 0%;
-  top: 8%;
-  height: 360px;
-  width: 45%;
-  background-position: right;
-}
-
 .about-line {
   display: flex;
   width: 84%;
@@ -894,82 +1081,6 @@
   margin-top: 160px;
   margin-bottom: 120px;
   border-bottom: 1px solid #fff;
-}
-
-.knowledge {
-  display: flex;
-  padding: 0% 8%;
-}
-
-.languages,
-.framework {
-  display: flex;
-  flex-direction: column;
-  width: 40%;
-}
-
-.skill {
-  display: flex;
-  flex-direction: column;
-  width: 20%;
-}
-
-.language-title,
-.framework-title,
-.skill-title {
-  display: flex;
-  flex-direction: row;
-}
-
-.language-title img,
-.framework-title img,
-.skill-title img {
-  margin-right: 10px;
-  width: 20px;
-  height: 20px;
-  margin-top: 10px;
-}
-
-.language-title h3,
-.framework-title h3,
-.skill-title h3 {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 700;
-  font-size: 30px;
-  display: flex;
-  color: #fff;
-}
-
-.language-names,
-.framework-names,
-.skill-names {
-  margin-top: 35px;
-}
-
-.language-names ul,
-.framework-names ul,
-.skill-names ul {
-  display: flex;
-  flex-direction: column;
-}
-
-.language-names ul li, 
-.framework-names ul li, 
-.skill-names ul li {
-  list-style-type: none;
-  margin-bottom: 20px;
-}
-
-.language-names ul li a, 
-.framework-names ul li a, 
-.skill-names ul li a {
-  color: #fff;
-  text-decoration: none;
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 22px;
-  line-height: 43px;
 }
 
 .contact {
@@ -1007,19 +1118,7 @@ form {
   display: flex;
 }
 
-#name input[name=fName], #name input[name=lName] {
-  width: 48%;
-  padding: 10px;
-  border: 0px;
-  border-bottom: 1px solid #dBd8d7;
-  box-sizing: border-box;
-}
-
-#name input[name=lName] {
-  margin-left: 4%;
-}
-
-#email input {
+#email input, #name input {
   width: 100%;
   padding: 10px;
   margin: 23px 0px;
