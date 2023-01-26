@@ -930,7 +930,8 @@ html {
 
 .multi-post-stories {
   display: grid;
-  grid-template-columns: 63% auto;
+  grid-template-columns: auto auto;
+  column-gap: 4%;
 }
 
 .stories-image img {
