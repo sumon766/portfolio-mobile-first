@@ -728,6 +728,13 @@ html {
   }
 }
 
+@media only screen and (max-width: 1350px) and (min-width: 1025px) {
+  .multi-post-stories {
+    grid-template-columns: auto auto !important;
+    column-gap: 4%;
+  }
+}
+
 .header-container {
   display: flex;
   flex-direction: row;
