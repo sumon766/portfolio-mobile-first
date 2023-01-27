@@ -374,7 +374,10 @@ html {
   }
 
   .get-resume-button:hover {
-    color: #d6c9c9;
+    background: #fff;
+    color: #d44e00;
+    border: 1px solid #d44e00;
+    transition: background 2s, color 1s, border 1s;
   }
 
   .about {
@@ -505,6 +508,16 @@ html {
     display: none;
   }
 
+  @keyframes for-side-image {
+    from {
+        right: 80%;
+    }
+
+    to {
+        right: 0%;
+    }
+  }
+
   .side-image {
     justify-self: flex-end;
     height: 100%;
@@ -516,6 +529,8 @@ html {
     position: absolute;
     top: 11%;
     right: 0%;
+    animation-name: for-side-image;
+    animation-duration: 2s;
   }
 
   .intro-container {
@@ -774,6 +789,7 @@ html {
 
 .social-icons-desk li {
   list-style-type: none;
+  animation: for-social-icons-desk 2s;
 }
 
 .navbar ul li {
@@ -825,6 +841,7 @@ html {
 .card-tags a:hover {
   background-color: #d44e00;
   color: #fff;
+  transition: all 0.5s ease;
 }
 
 .details a:hover {
@@ -859,6 +876,8 @@ html {
   width: 50%;
   padding-left: 3%;
   box-sizing: border-box;
+  animation-name: for-intro;
+  animation-duration: 2s;
 }
 
 .intro h2 {
@@ -928,6 +947,11 @@ html {
   margin-bottom: 25px;
 }
 
+@keyframes stories-image {
+    50% {transform: rotate(-180deg);}
+    100% {transform: rotate(0deg);}
+}
+
 .multi-post-stories {
   display: grid;
   grid-template-columns: auto auto;
@@ -937,6 +961,7 @@ html {
 .stories-image img {
   max-width: 100%;
   height: auto;
+  animation: stories-image 3s;
 }
 
 .stories {
@@ -994,7 +1019,10 @@ html {
 }
 
 .details-button:hover {
-  background: #d44e00;
+  background: #fff;
+  color: #d44e00;
+  border: 1px solid #d44e00;
+  transition: background 2s, color 1s, border 1s;
 }
 
 .cards-container {
@@ -1200,10 +1228,6 @@ textarea {
   padding: 10px 12px;
   border: 0;
   cursor: pointer;
-}
-
-.contact-form button:hover {
-  background-color: #d44e00;
 }
 
 .footer {
