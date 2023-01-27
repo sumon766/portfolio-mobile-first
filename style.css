@@ -533,6 +533,14 @@ html {
     animation-duration: 2s;
   }
 
+  .get-resume-button:hover {
+    background: #fff;
+    padding: 11px;
+    color: #D44E00;
+    border: 1px solid #D44E00;
+    transition: background 2s, color 1s, border 1s;
+  }
+
   .intro-container {
     padding: 12% 0%;
   }
@@ -1228,6 +1236,13 @@ textarea {
   padding: 10px 12px;
   border: 0;
   cursor: pointer;
+}
+
+.contact-form button:hover {
+  background: #fff;
+  color: #D44E00;
+  border: 1px solid #D44E00;
+  transition: background 2s, color 1s, border 1s;
 }
 
 .footer {
