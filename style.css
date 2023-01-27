@@ -510,11 +510,11 @@ html {
 
   @keyframes for-side-image {
     from {
-        right: 80%;
+      right: 80%;
     }
 
     to {
-        right: 0%;
+      right: 0%;
     }
   }
 
@@ -536,8 +536,8 @@ html {
   .get-resume-button:hover {
     background: #fff;
     padding: 11px;
-    color: #D44E00;
-    border: 1px solid #D44E00;
+    color: #d44e00;
+    border: 1px solid #d44e00;
     transition: background 2s, color 1s, border 1s;
   }
 
@@ -956,8 +956,8 @@ html {
 }
 
 @keyframes stories-image {
-    50% {transform: rotate(-180deg);}
-    100% {transform: rotate(0deg);}
+  50% { transform: rotate(-180deg); }
+  100% { transform: rotate(0deg); }
 }
 
 .multi-post-stories {
@@ -970,6 +970,7 @@ html {
   max-width: 100%;
   height: auto;
   animation: stories-image 3s;
+  animation-delay: 5s;
 }
 
 .stories {
@@ -1240,8 +1241,8 @@ textarea {
 
 .contact-form button:hover {
   background: #fff;
-  color: #D44E00;
-  border: 1px solid #D44E00;
+  color: #d44e00;
+  border: 1px solid #d44e00;
   transition: background 2s, color 1s, border 1s;
 }
 
