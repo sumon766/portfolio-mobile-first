@@ -68,6 +68,7 @@ The desktop version of the portfolio is ready and updated. This portfolio is now
 - **Recent works history**
 - **Tech listings**
 - **Contact form**
+- **Live Site using github pages**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
