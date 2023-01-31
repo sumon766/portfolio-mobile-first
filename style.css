@@ -853,11 +853,11 @@ html {
 }
 
 .details a:hover {
-    color: #fff;
-    font-size: 20px;
-    transition-property: font-size;
-    transition-duration: 1s;
-    transition-timing-function: ease;
+  color: #fff;
+  font-size: 20px;
+  transition-property: font-size;
+  transition-duration: 1s;
+  transition-timing-function: ease;
 }
 
 .navbar ul li a:hover {
@@ -1228,7 +1228,7 @@ textarea {
 }
 
 .contact-form label {
-    display: none;
+  display: none;
 }
 
 .contact-form button {
