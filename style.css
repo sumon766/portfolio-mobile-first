@@ -776,7 +776,7 @@ html {
   color: #fff;
   align-self: center;
   font-family: 'Inter', sans-serif;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 17px;
 }
 
@@ -853,7 +853,11 @@ html {
 }
 
 .details a:hover {
-  color: #d6c9c9;
+    color: #fff;
+    font-size: 20px;
+    transition-property: font-size;
+    transition-duration: 1s;
+    transition-timing-function: ease;
 }
 
 .navbar ul li a:hover {
@@ -1221,6 +1225,10 @@ textarea {
 #small::placeholder {
   color: #3c3a39;
   font-weight: 400;
+}
+
+.contact-form label {
+    display: none;
 }
 
 .contact-form button {
