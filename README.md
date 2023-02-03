@@ -77,6 +77,7 @@ The desktop version of the portfolio is ready and updated. This portfolio is now
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 - [Live Demo Link](https://sumon766.github.io/portfolio-mobile-first/)
+- [Portfolio Presentation](https://www.loom.com/share/3a2841eaac7844d9ad596da11013101a)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
