@@ -107,6 +107,7 @@ html {
 @media only screen and (max-width: 769px) {
   .header-container {
     padding: 0 !important;
+    position: relative;
   }
 
   .website-name {
@@ -114,8 +115,77 @@ html {
     justify-self: center;
   }
 
-  .nav {
-    visibility: hidden;
+  #cross {
+    display: none;
+  }
+
+  .nav-mobile {
+    display: none;
+  }
+
+  .nav ul {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    justify-content: flex-start;
+    left: 0%;
+    top: 100%;
+    z-index: 1;
+    background: #3e3c3c;
+    width: 100%;
+    height: 100vh;
+  }
+
+  .social-icons-mob > li {
+    margin-right: 15px;
+  }
+
+  .language-names li,
+  .framework-names li,
+  .skill-names li {
+    list-style-type: none;
+    margin-bottom: 25px;
+  }
+
+  .card-tags ul li {
+    list-style-type: none;
+    margin-right: 15px;
+  }
+
+  .nav ul li {
+    padding: 15px 0 !important;
+    border-bottom: 1px solid #6f6c6b;
+  }
+
+  .nav ul li:last-child {
+    display: none;
+  }
+
+  .details a {
+    text-decoration: none;
+    color: #fff;
+    align-self: center;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 17px;
+  }
+
+  .language-names a,
+  .framework-names a,
+  .skill-names a {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+  }
+
+  .nav ul li a {
+    font-size: 24px !important;
+  }
+
+  .nav ul li:hover {
+    background-color: #1c1a19;
   }
 
   .mobile-menu {
@@ -162,10 +232,6 @@ html {
     flex-direction: row !important;
     margin-top: 20px;
     margin-left: 40px;
-  }
-
-  .social-icons-mob > li {
-    margin-right: 15px;
   }
 
   .social-icons-mob i {
@@ -269,37 +335,6 @@ html {
   .card-tags ul {
     display: flex;
     flex-direction: row;
-  }
-
-  .language-names li,
-  .framework-names li,
-  .skill-names li {
-    list-style-type: none;
-    margin-bottom: 25px;
-  }
-
-  .card-tags ul li {
-    list-style-type: none;
-    margin-right: 15px;
-  }
-
-  .details a {
-    text-decoration: none;
-    color: #fff;
-    align-self: center;
-    font-family: 'Inter', sans-serif;
-    font-weight: 700;
-    font-size: 17px;
-  }
-
-  .language-names a,
-  .framework-names a,
-  .skill-names a {
-    text-decoration: none;
-    color: #fff;
-    font-family: 'Inter', sans-serif;
-    font-weight: 300;
-    font-size: 20px;
   }
 
   .card-tags ul li a {
@@ -760,7 +795,7 @@ html {
   flex-direction: row;
   flex-wrap: wrap;
   background-color: #3e3c3c;
-  padding: 15px;
+  padding: 15px !important;
   align-content: center;
   justify-content: center;
   position: fixed;
