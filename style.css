@@ -107,15 +107,12 @@ html {
 @media only screen and (max-width: 769px) {
   .header-container {
     padding: 0 !important;
+    position: relative;
   }
 
   .website-name {
     align-self: center;
     justify-self: center;
-  }
-
-  .header-container {
-    position: relative;
   }
 
   #cross {
@@ -138,8 +135,24 @@ html {
     width: 100%;
   }
 
+  .social-icons-mob > li {
+    margin-right: 15px;
+  }
+
+  .language-names li,
+  .framework-names li,
+  .skill-names li {
+    list-style-type: none;
+    margin-bottom: 25px;
+  }
+
+  .card-tags ul li {
+    list-style-type: none;
+    margin-right: 15px;
+  }
+
   .nav ul li {
-    padding: 15px 0px !important;
+    padding: 15px 0 !important;
   }
 
   .nav ul li:hover {
@@ -190,10 +203,6 @@ html {
     flex-direction: row !important;
     margin-top: 20px;
     margin-left: 40px;
-  }
-
-  .social-icons-mob > li {
-    margin-right: 15px;
   }
 
   .social-icons-mob i {
@@ -297,18 +306,6 @@ html {
   .card-tags ul {
     display: flex;
     flex-direction: row;
-  }
-
-  .language-names li,
-  .framework-names li,
-  .skill-names li {
-    list-style-type: none;
-    margin-bottom: 25px;
-  }
-
-  .card-tags ul li {
-    list-style-type: none;
-    margin-right: 15px;
   }
 
   .details a {
