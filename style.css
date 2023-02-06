@@ -466,7 +466,7 @@ html {
     text-align: center !important;
   }
 
-  .contact-form-mob {
+  .contact-form {
     width: auto !important;
     margin-left: 0% !important;
     margin-top: 60px;
@@ -763,6 +763,9 @@ html {
   padding: 15px;
   align-content: center;
   justify-content: center;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
 }
 
 .website-name {
