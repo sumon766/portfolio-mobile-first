@@ -1,7 +1,6 @@
 const nav = document.querySelector('.nav');
 const bars = document.querySelector('#bars');
 const cross = document.querySelector('#cross');
-const items = document.querySelector('.nav');
 const headerContainer = document.querySelector('.header-container');
 
 if (window.screen.width < 769) {
@@ -19,7 +18,7 @@ if (window.screen.width < 769) {
     headerContainer.style.position = 'static';
   });
 
-  items.addEventListener('click', () => {
+  nav.addEventListener('click', () => {
     nav.style.display = 'none';
     bars.style.display = 'block';
     cross.style.display = 'none';
