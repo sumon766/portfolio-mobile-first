@@ -114,8 +114,36 @@ html {
     justify-self: center;
   }
 
-  .nav {
+  .header-container {
+    position: relative;
+  }
+
+  #cross {
     display: none;
+  }
+
+  .nav-mobile {
+    display: none;
+  }
+
+  .nav ul {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    justify-content: flex-start;
+    left: 0%;
+    top: 100%;
+    z-index: 1;
+    background: #3e3c3c;
+    width: 100%;
+  }
+
+  .nav ul li {
+    padding: 15px 0px !important;
+  }
+
+  .nav ul li:hover {
+    background-color: #1c1a19;
   }
 
   .mobile-menu {
