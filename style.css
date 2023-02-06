@@ -115,7 +115,7 @@ html {
   }
 
   .nav {
-    visibility: hidden;
+    display: none;
   }
 
   .mobile-menu {
@@ -760,7 +760,7 @@ html {
   flex-direction: row;
   flex-wrap: wrap;
   background-color: #3e3c3c;
-  padding: 15px;
+  padding: 15px !important;
   align-content: center;
   justify-content: center;
   position: fixed;
