@@ -153,6 +153,7 @@ html {
 
   .nav ul li {
     padding: 15px 0 !important;
+    border-bottom: 1px solid #6f6c6b;
   }
 
   .nav ul li:hover {
