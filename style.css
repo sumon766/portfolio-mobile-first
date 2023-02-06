@@ -133,6 +133,7 @@ html {
     z-index: 1;
     background: #3e3c3c;
     width: 100%;
+    height: 100vh;
   }
 
   .social-icons-mob > li {
@@ -154,6 +155,33 @@ html {
   .nav ul li {
     padding: 15px 0 !important;
     border-bottom: 1px solid #6f6c6b;
+  }
+
+  .nav ul li:last-child {
+    display: none;
+  }
+
+  .details a {
+    text-decoration: none;
+    color: #fff;
+    align-self: center;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 17px;
+  }
+
+  .language-names a,
+  .framework-names a,
+  .skill-names a {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+  }
+
+  .nav ul li a {
+    font-size: 24px !important;
   }
 
   .nav ul li:hover {
@@ -307,25 +335,6 @@ html {
   .card-tags ul {
     display: flex;
     flex-direction: row;
-  }
-
-  .details a {
-    text-decoration: none;
-    color: #fff;
-    align-self: center;
-    font-family: 'Inter', sans-serif;
-    font-weight: 700;
-    font-size: 17px;
-  }
-
-  .language-names a,
-  .framework-names a,
-  .skill-names a {
-    text-decoration: none;
-    color: #fff;
-    font-family: 'Inter', sans-serif;
-    font-weight: 300;
-    font-size: 20px;
   }
 
   .card-tags ul li a {
