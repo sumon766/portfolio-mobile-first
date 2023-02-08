@@ -79,6 +79,15 @@ html {
   .about-side-image {
     bottom: -60% !important;
   }
+
+  .see-live-button {
+    padding: 10px 12px !important;
+  }
+
+  .see-source-button {
+    padding: 10px 12px !important;
+    right: 5% !important;
+  }
 }
 
 @media only screen and (max-width: 480px) {
@@ -539,6 +548,11 @@ html {
 
   .see-live-button {
     right: 58% !important;
+    bottom: 5%;
+  }
+
+  .see-source-button {
+    bottom: 5%;
   }
 }
 
@@ -1454,9 +1468,15 @@ textarea {
 
 .see-live-button:hover,
 .see-source-button:hover {
-  background-color: #fff;
+  background-color: #fff5e1;
   border: 1px solid #f55800;
   color: #f55800;
+}
+
+.see-live-button:active,
+.see-source-button:active {
+  background-color: #f55800 !important;
+  color: #fff !important;
 }
 
 #overlay {
