@@ -95,7 +95,7 @@ multiPostModal.appendChild(multiPostModalContent);
 
 const multiPostModalClose = document.createElement('i');
 multiPostModalClose.classList = ['multi-post-modal-close'];
-multiPostModalClose.innerHTML = "&times";
+multiPostModalClose.innerHTML = '&times';
 multiPostModalClose.id = 'multiPostModalClose';
 multiPostModalContent.appendChild(multiPostModalClose);
 
@@ -150,8 +150,8 @@ modalButton.onclick = function () {
   bodyTag.style.overflow = 'hidden';
   bodyTag.style.background = 'rgba(0,0,0,0.7)';
 
-  let overLay = document.createElement("div");
-  overLay.id = "overlay";
+  const overLay = document.createElement('div');
+  overLay.id = 'overlay';
   bodyTag.appendChild(overLay);
 };
 
@@ -162,7 +162,7 @@ closeButton.onclick = function () {
   bodyTag.style.overflow = 'scroll';
   bodyTag.style.background = '#fff';
 
-  bodyTag.removeChild(document.getElementById("overlay"));
+  bodyTag.removeChild(document.getElementById('overlay'));
 };
 
 const cardsContainer = document.createElement('div');
@@ -226,7 +226,7 @@ for (let i = 0; i < 6; i++) {
   projectModalTitleCloseDiv.appendChild(projectModalTitle);
   const projectModalClose = document.createElement('i');
   projectModalClose.classList = ['project-modal-close'];
-  projectModalClose.innerHTML = "&times";
+  projectModalClose.innerHTML = '&times';
   const closeID = `projectModalClose${i}`;
   projectModalClose.id = closeID;
   projectModalTitleCloseDiv.appendChild(projectModalClose);
@@ -275,8 +275,8 @@ for (let i = 0; i < 6; i++) {
     bodyTag.style.overflow = 'hidden';
     bodyTag.style.background = 'rgba(0,0,0,0.7)';
 
-    let overLay = document.createElement("div");
-    overLay.id = "overlay";
+    const overLay = document.createElement('div');
+    overLay.id = 'overlay';
     bodyTag.appendChild(overLay);
   };
   // Project Modal Close
@@ -286,6 +286,6 @@ for (let i = 0; i < 6; i++) {
     bodyTag.style.overflow = 'scroll';
     bodyTag.style.background = '#fff';
 
-    bodyTag.removeChild(document.getElementById("overlay"));
+    bodyTag.removeChild(document.getElementById('overlay'));
   };
 }
