@@ -88,6 +88,10 @@ html {
     padding: 10px 12px !important;
     right: 5% !important;
   }
+
+  .modal-content p, .project-modal-image-container p {
+    font-size: 14px !important;
+  }
 }
 
 @media only screen and (max-width: 480px) {
@@ -110,6 +114,18 @@ html {
 
   .stories p {
     width: 340px !important;
+  }
+
+  .see-live-button {
+    padding: 8px 8px !important;
+    position: fixed;
+    bottom: 1% !important;
+  }
+
+  .see-source-button {
+    padding: 8px 8px !important;
+    position: fixed;
+    bottom: 1% !important;
   }
 }
 
@@ -702,6 +718,18 @@ html {
   screen and (max-height: 1280px) and (min-height: 1050px) {
   .side-image {
     top: -15%;
+  }
+
+  .see-live-button {
+    left: 10% !important;
+  }
+
+  .multi-post-modal-image-container, .project-modal-image-container {
+    display: block !important;
+  }
+
+  .modal-content p, .project-modal-image-container p {
+    margin-top: 20px !important;
   }
 }
 
