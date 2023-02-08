@@ -89,7 +89,8 @@ html {
     right: 5% !important;
   }
 
-  .modal-content p, .project-modal-image-container p {
+  .modal-content p,
+  .project-modal-image-container p {
     font-size: 14px !important;
   }
 }
@@ -724,11 +725,13 @@ html {
     left: 10% !important;
   }
 
-  .multi-post-modal-image-container, .project-modal-image-container {
+  .multi-post-modal-image-container,
+  .project-modal-image-container {
     display: block !important;
   }
 
-  .modal-content p, .project-modal-image-container p {
+  .modal-content p,
+  .project-modal-image-container p {
     margin-top: 20px !important;
   }
 }
