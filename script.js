@@ -161,3 +161,117 @@ closeButton.onclick = function () {
 const cardsContainer = document.createElement('div');
 cardsContainer.className = 'cards-container';
 recentWorks.appendChild(cardsContainer);
+
+/* eslint-disable-next-line no-plusplus */
+for (let i = 0; i < 6; i++) {
+  const project1 = {
+    postTitle: 'Professional Art Printing Data',
+    postBrief: "A daily selection of privately personalized reads; no accounts of sign-ups required. has been the industry's standard",
+    tags: ['html', 'bootstrap', 'Ruby'],
+    button: 'See Project',
+  };
+  const cardArea = document.createElement('div');
+  cardArea.className = 'card-area';
+  cardsContainer.appendChild(cardArea);
+  const card = document.createElement('div');
+  card.classList = ['card card1'];
+  cardArea.appendChild(card);
+  const project1Title = document.createElement('h6');
+  const project1Brief = document.createElement('p');
+  project1Title.innerHTML = project1.postTitle;
+  project1Brief.innerHTML = project1.postBrief;
+  card.appendChild(project1Title);
+  card.appendChild(project1Brief);
+  const cardTagsDiv = document.createElement('div');
+  cardTagsDiv.className = 'card-tags';
+  card.appendChild(cardTagsDiv);
+  const cardTagsUnorderedList = document.createElement('ul');
+  cardTagsDiv.appendChild(cardTagsUnorderedList);
+  const project1Tags = project1.tags;
+  /* eslint-disable-next-line no-plusplus */
+  for (let i = 0; i < project1Tags.length; i++) {
+    const project1TagsList = document.createElement('li');
+    const project1link = document.createElement('a');
+    project1link.href = '#';
+    project1link.innerHTML = project1Tags[i];
+    project1TagsList.appendChild(project1link);
+    cardTagsUnorderedList.appendChild(project1TagsList);
+  }
+  const detailsDiv = document.createElement('div');
+  detailsDiv.className = 'details';
+  const detailsID = `projectDetails${i}`;
+  detailsDiv.innerHTML = `<a href='#' id='${detailsID}'>See Project</a>`;
+  cardArea.appendChild(detailsDiv);
+  // Project Modal Creation
+  const projectModal = document.createElement('div');
+  projectModal.className = 'project-modal';
+  const id = `projectModal${i}`;
+  projectModal.id = id;
+  cardArea.appendChild(projectModal);
+  const projectModalContent = document.createElement('div');
+  projectModalContent.className = 'project-modal-content';
+  projectModal.appendChild(projectModalContent);
+  const projectModalTitleCloseDiv = document.createElement('div');
+  projectModalTitleCloseDiv.className = 'title-and-close';
+  projectModalContent.appendChild(projectModalTitleCloseDiv);
+  const projectModalTitle = document.createElement('h2');
+  projectModalTitle.innerHTML = project1.postTitle;
+  projectModalTitleCloseDiv.appendChild(projectModalTitle);
+  const projectModalClose = document.createElement('i');
+  projectModalClose.classList = ['fa fa-times project-modal-close'];
+  const closeID = `projectModalClose${i}`;
+  projectModalClose.id = closeID;
+  projectModalTitleCloseDiv.appendChild(projectModalClose);
+  const projectModalTagsDiv = document.createElement('div');
+  projectModalTagsDiv.className = 'projectModalTags';
+  projectModalContent.appendChild(projectModalTagsDiv);
+  const projectModalUnorderedList = document.createElement('ul');
+  projectModalTagsDiv.appendChild(projectModalUnorderedList);
+  const projectModalTags = project1.tags;
+  /* eslint-disable-next-line no-plusplus */
+  for (let i = 0; i < projectModalTags.length; i++) {
+    const projectModalListItem = document.createElement('li');
+    const projectModalLink = document.createElement('a');
+    projectModalLink.href = '#';
+    projectModalLink.innerHTML = projectModalTags[i];
+    projectModalUnorderedList.appendChild(projectModalListItem);
+    projectModalListItem.appendChild(projectModalLink);
+  }
+  const projectModalImageContainer = document.createElement('div');
+  projectModalContent.appendChild(projectModalImageContainer);
+  projectModalImageContainer.className = 'project-modal-image-container';
+  const projectModalImage = document.createElement('img');
+  projectModalImage.src = 'images/snapshot-portfolio.png';
+  projectModalImageContainer.appendChild(projectModalImage);
+  const projectModalTextcontainer = document.createElement('div');
+  projectModalImageContainer.appendChild(projectModalTextcontainer);
+  const projectModalText = document.createElement('p');
+  projectModalText.innerHTML = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.";
+  projectModalTextcontainer.appendChild(projectModalText);
+  const projectModalSeeLive = document.createElement('a');
+  projectModalSeeLive.href = window.location.href;
+  projectModalSeeLive.className = 'see-live-button';
+  projectModalSeeLive.innerHTML = "See Live <i class = 'fa fa-external-link'></i>";
+  projectModalTextcontainer.appendChild(projectModalSeeLive);
+  const projectModalSeeSource = document.createElement('a');
+  projectModalSeeSource.className = 'see-source-button';
+  projectModalSeeSource.href = 'https://github.com/sumon766/portfolio-mobile-first';
+  projectModalSeeSource.innerHTML = "See Source <i class = 'fa fa-github'></i>";
+  projectModalTextcontainer.appendChild(projectModalSeeSource);
+  // Project Modal open
+  const projectModalButton = document.getElementById(`projectDetails${i}`);
+  const projectModalForButton = document.getElementById(`projectModal${i}`);
+  const bodyTag = document.getElementsByTagName('BODY')[0];
+  projectModalButton.onclick = function () {
+    projectModalForButton.style.display = 'block';
+    bodyTag.style.overflow = 'hidden';
+    bodyTag.style.background = 'rgba(0,0,0,0.7)';
+  };
+  // Project Modal Close
+  const projectCloseButton = document.getElementById(`projectModalClose${i}`);
+  projectCloseButton.onclick = function () {
+    projectModalForButton.style.display = 'none';
+    bodyTag.style.overflow = 'scroll';
+    bodyTag.style.background = '#fff';
+  };
+}
