@@ -94,7 +94,8 @@ multiPostModalContent.className = 'modal-content';
 multiPostModal.appendChild(multiPostModalContent);
 
 const multiPostModalClose = document.createElement('i');
-multiPostModalClose.classList = ['fa fa-times multi-post-modal-close'];
+multiPostModalClose.classList = ['multi-post-modal-close'];
+multiPostModalClose.innerHTML = "&times";
 multiPostModalClose.id = 'multiPostModalClose';
 multiPostModalContent.appendChild(multiPostModalClose);
 
@@ -148,6 +149,10 @@ modalButton.onclick = function () {
   multiPostModalForButton.style.display = 'block';
   bodyTag.style.overflow = 'hidden';
   bodyTag.style.background = 'rgba(0,0,0,0.7)';
+
+  let overLay = document.createElement("div");
+  overLay.id = "overlay";
+  bodyTag.appendChild(overLay);
 };
 
 // Multi Post Modal Close
@@ -156,6 +161,8 @@ closeButton.onclick = function () {
   multiPostModalForButton.style.display = 'none';
   bodyTag.style.overflow = 'scroll';
   bodyTag.style.background = '#fff';
+
+  bodyTag.removeChild(document.getElementById("overlay"));
 };
 
 const cardsContainer = document.createElement('div');
@@ -218,7 +225,8 @@ for (let i = 0; i < 6; i++) {
   projectModalTitle.innerHTML = project1.postTitle;
   projectModalTitleCloseDiv.appendChild(projectModalTitle);
   const projectModalClose = document.createElement('i');
-  projectModalClose.classList = ['fa fa-times project-modal-close'];
+  projectModalClose.classList = ['project-modal-close'];
+  projectModalClose.innerHTML = "&times";
   const closeID = `projectModalClose${i}`;
   projectModalClose.id = closeID;
   projectModalTitleCloseDiv.appendChild(projectModalClose);
@@ -266,6 +274,10 @@ for (let i = 0; i < 6; i++) {
     projectModalForButton.style.display = 'block';
     bodyTag.style.overflow = 'hidden';
     bodyTag.style.background = 'rgba(0,0,0,0.7)';
+
+    let overLay = document.createElement("div");
+    overLay.id = "overlay";
+    bodyTag.appendChild(overLay);
   };
   // Project Modal Close
   const projectCloseButton = document.getElementById(`projectModalClose${i}`);
@@ -273,5 +285,7 @@ for (let i = 0; i < 6; i++) {
     projectModalForButton.style.display = 'none';
     bodyTag.style.overflow = 'scroll';
     bodyTag.style.background = '#fff';
+
+    bodyTag.removeChild(document.getElementById("overlay"));
   };
 }
