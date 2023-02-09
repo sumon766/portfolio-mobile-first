@@ -289,3 +289,10 @@ for (let i = 0; i < 6; i++) {
     bodyTag.removeChild(document.getElementById('overlay'));
   };
 }
+
+//Form Validation
+const form = document.getElementById("form");
+let email = document.getElementById("emailAddress");
+
+
+
