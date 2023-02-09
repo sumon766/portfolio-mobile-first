@@ -289,3 +289,18 @@ for (let i = 0; i < 6; i++) {
     bodyTag.removeChild(document.getElementById('overlay'));
   };
 }
+
+// Form Validation
+const form = document.getElementById('form');
+const email = document.getElementById('emailAddress');
+
+form.addEventListener('submit', (event) => {
+  const emailRegex = /^[a-z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+  if (emailRegex.test(email.value)) {
+    form.submit();
+  } else {
+    event.preventDefault();
+    const errorMessage = document.getElementById('errorMessage');
+    errorMessage.innerText = 'Please enter email in lowercase letters';
+  }
+});

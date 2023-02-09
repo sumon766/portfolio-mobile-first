@@ -1358,6 +1358,7 @@ textarea {
   padding: 10px 12px;
   border: 0;
   cursor: pointer;
+  margin-top: 20px;
 }
 
 .contact-form button:hover {
@@ -1517,4 +1518,10 @@ textarea {
   bottom: 0;
   left: 0;
   backdrop-filter: blur(5px);
+}
+
+#errorMessage {
+  font-size: 15px;
+  color: #f00;
+  font-family: 'Inter', sans-serif;
 }
