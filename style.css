@@ -1521,7 +1521,7 @@ textarea {
 }
 
 #errorMessage {
-    font-size: 15px;
-    color: #f00;
-    font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  color: #f00;
+  font-family: 'Inter', sans-serif;
 }

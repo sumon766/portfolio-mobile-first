@@ -290,19 +290,17 @@ for (let i = 0; i < 6; i++) {
   };
 }
 
-//Form Validation
-const form = document.getElementById("form");
-let email = document.getElementById("emailAddress");
+// Form Validation
+const form = document.getElementById('form');
+const email = document.getElementById('emailAddress');
 
-form.addEventListener("submit", function (event) {
-  let emailRegex = /^[a-z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+form.addEventListener('submit', (event) => {
+  const emailRegex = /^[a-z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
   if (emailRegex.test(email.value)) {
-      form.submit();
-  }
-  else {
-      event.preventDefault();
-      let errorMessage = document.getElementById("errorMessage");
-      errorMessage.innerText = "Please enter email in lowercase letters";
+    form.submit();
+  } else {
+    event.preventDefault();
+    const errorMessage = document.getElementById('errorMessage');
+    errorMessage.innerText = 'Please enter email in lowercase letters';
   }
 });
-
