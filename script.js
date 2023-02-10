@@ -295,7 +295,7 @@ const form = document.getElementById('form');
 const email = document.getElementById('emailAddress');
 
 form.addEventListener('submit', (event) => {
-  const emailRegex = /^[a-z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+  const emailRegex = /^[a-z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-z0-9-]+(?:\.[a-z0-9-]+)*$/;
   if (emailRegex.test(email.value)) {
     form.submit();
   } else {
@@ -304,3 +304,32 @@ form.addEventListener('submit', (event) => {
     errorMessage.innerText = 'Please enter email in lowercase letters';
   }
 });
+
+// Save form data
+/* eslint-disable no-unused-vars */
+form.addEventListener('input', (event) => {
+  const saveFormData = {
+    fullName: document.getElementById('fullName').value,
+    email: document.getElementById('emailAddress').value,
+    desktopMessage: document.getElementById('large').value,
+    mobileMessage: document.getElementById('small').value,
+  };
+
+  localStorage.setItem('saveFormData', JSON.stringify(saveFormData));
+});
+
+// Retrieve form data
+
+const parsedFormData = JSON.parse(localStorage.getItem('saveFormData'));
+
+// Pre-fill form data
+if (parsedFormData) {
+  const fullName = document.getElementById('fullName');
+  fullName.value = parsedFormData.fullName;
+  const email = document.getElementById('emailAddress');
+  email.value = parsedFormData.email;
+  const desktopMessage = document.getElementById('large');
+  desktopMessage.value = parsedFormData.desktopMessage;
+  const mobileMessage = document.getElementById('small');
+  mobileMessage.value = parsedFormData.mobileMessage;
+}
