@@ -322,14 +322,3 @@ form.addEventListener('submit', (event) => {
 const retrievedFormData = localStorage.getItem('saveFormData');
 const parsedFormData = JSON.parse(retrievedFormData);
 
-// Pre-fill form data
-if (parsedFormData) {
-  const fullName = document.getElementById('fullName');
-  fullName.value = parsedFormData.fullName;
-  const email = document.getElementById('emailAddress');
-  email.value = parsedFormData.email;
-  const desktopMessage = document.getElementById('large');
-  desktopMessage.value = parsedFormData.desktopMessage;
-  const mobileMessage = document.getElementById('small');
-  mobileMessage.value = parsedFormData.mobileMessage;
-}
