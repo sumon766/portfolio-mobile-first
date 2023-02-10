@@ -187,8 +187,8 @@ for (let i = 0; i < 6; i++) {
   const project1Brief = document.createElement('p');
   project1Title.innerHTML = project1.postTitle;
   project1Brief.innerHTML = project1.postBrief;
-  card.appendChild(project1Title);
-  card.appendChild(project1Brief);
+  cardArea.appendChild(project1Title);
+  cardArea.appendChild(project1Brief);
   const cardTagsDiv = document.createElement('div');
   cardTagsDiv.className = 'card-tags';
   card.appendChild(cardTagsDiv);
@@ -208,7 +208,7 @@ for (let i = 0; i < 6; i++) {
   detailsDiv.className = 'details';
   const detailsID = `projectDetails${i}`;
   detailsDiv.innerHTML = `<a href='#' id='${detailsID}'>See Project</a>`;
-  cardArea.appendChild(detailsDiv);
+  card.appendChild(detailsDiv);
   // Project Modal Creation
   const projectModal = document.createElement('div');
   projectModal.className = 'project-modal';
