@@ -307,7 +307,7 @@ form.addEventListener('submit', (event) => {
 
 // Save form data
 /* eslint-disable no-unused-vars */
-form.addEventListener('submit', (event) => {
+form.addEventListener('input', (event) => {
   const saveFormData = {
     fullName: document.getElementById('fullName').value,
     email: document.getElementById('emailAddress').value,
@@ -319,6 +319,17 @@ form.addEventListener('submit', (event) => {
 });
 
 // Retrieve form data
-const retrievedFormData = localStorage.getItem('saveFormData');
-const parsedFormData = JSON.parse(retrievedFormData);
 
+const parsedFormData = JSON.parse(localStorage.getItem('saveFormData'));
+
+// Pre-fill form data
+if (parsedFormData) {
+  const fullName = document.getElementById('fullName');
+  fullName.value = parsedFormData.fullName;
+  const email = document.getElementById('emailAddress');
+  email.value = parsedFormData.email;
+  const desktopMessage = document.getElementById('large');
+  desktopMessage.value = parsedFormData.desktopMessage;
+  const mobileMessage = document.getElementById('small');
+  mobileMessage.value = parsedFormData.mobileMessage;
+}
